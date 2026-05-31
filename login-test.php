@@ -1,0 +1,1 @@
+<?php echo "REWRITE WORKS - REQUEST_URI=" . $_SERVER['REQUEST_URI']; ?>

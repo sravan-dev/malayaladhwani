@@ -1,0 +1,794 @@
+[29-Apr-2026 10:18:25 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ayyxqocu/malayaladhwani/fm.php on line 2678
+[29-Apr-2026 11:09:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ayyxqocu/malayaladhwani/fm.php on line 3201
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1777638667, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1777638667, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1777638667)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1777638667)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1777638667', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[01-May-2026 12:01:07 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[08-May-2026 07:11:05 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[12-May-2026 17:21:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, a:2:{s:7:&quot;version&quot;;s:6:&quot;12.7.4&quot;;s:8:&quot;patterns&quot;;a:0:{}}, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', Array, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', Array)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2682): add_site_option('_site_transient...', Array)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', 'a:2:{s:7:\"version\";s:6:\"12.7.4\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[12-May-2026 17:53:35 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1778610215', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk &gt; 0; | (no parameters)</li>
+<li>Executing: SELECT * FROM pragma_index_list(&#039;wp_options&#039;) as l; | (no parameters)</li>
+<li>Executing: INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES (:param0 , :param1 , :param2 ) ON   CONFLICT (`option_id`) DO UPDATE SET  `option_name` = excluded.`option_name`, `option_value` = excluded.`option_value`, `autoload` = excluded.`autoload` | parameters: _site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed, 1778610215, off</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4229 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 5 database is locked.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(549): WP_SQLite_Translator->get_error_message()
+#1 /home/ayyxqocu/malayaladhwani/wp-content/plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(455): WP_SQLite_DB->_do_query('INSERT INTO `wp...')
+#2 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1143): WP_SQLite_DB->query('INSERT INTO `wp...')
+#3 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2189): add_option('_site_transient...', 1778610215, '', 'off')
+#4 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(1953): add_network_option(1, '_site_transient...', 1778610215)
+#5 /home/ayyxqocu/malayaladhwani/wp-includes/option.php(2680): add_site_option('_site_transient...', 1778610215)
+#6 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(2047): set_site_transient('wp_theme_files_...', Array, 1800)
+#7 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-theme.php(1856): WP_Theme->set_pattern_cache(Array)
+#8 /home/ayyxqocu/malayaladhwani/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#9 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(341): _register_theme_block_patterns('')
+#10 /home/ayyxqocu/malayaladhwani/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#11 /home/ayyxqocu/malayaladhwani/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#12 /home/ayyxqocu/malayaladhwani/wp-settings.php(742): do_action('init')
+#13 /home/ayyxqocu/malayaladhwani/wp-config.php(145): require_once('/home/ayyxqocu/...')
+#14 /home/ayyxqocu/malayaladhwani/wp-load.php(50): require_once('/home/ayyxqocu/...')
+#15 /home/ayyxqocu/malayaladhwani/wp-blog-header.php(13): require_once('/home/ayyxqocu/...')
+#16 /home/ayyxqocu/malayaladhwani/index.php(17): require('/home/ayyxqocu/...')
+#17 {main}</pre>
+ for query INSERT INTO `wp_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_timeout_wp_theme_files_patterns-eaed968423de38c8dda5edfc8c23cfed', '1778610215', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
